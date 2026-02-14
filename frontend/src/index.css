@@ -1,39 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Fonts - KILOM Premium 
-   NOTE: Remplacez ces Google Fonts par vos polices personnalisées quand vous les ajoutez
-   Placez vos fichiers dans /app/frontend/public/fonts/ et décommentez les @font-face ci-dessous
-*/
+/* Custom Fonts - KILOM Premium */
 
-/*
+/* Pilcrow Rounded - Pour le logo */
 @font-face {
     font-family: 'Pilcrow Rounded';
-    src: url('/fonts/pilcrow-rounded.otf') format('opentype');
-    font-weight: normal;
+    src: url('/PilcrowRounded-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pilcrow Rounded';
+    src: url('/PilcrowRounded-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Clash Display - Pour les titres */
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/ClashDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Clash Display';
-    src: url('/fonts/clash-display.otf') format('opentype');
-    font-weight: bold;
+    src: url('/ClashDisplay-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inter - Pour le corps de texte (24pt = taille optimale web) */
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('/fonts/inter.ttf') format('truetype');
-    font-weight: 100 900;
+    src: url('/Inter_24pt-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
-*/
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter_24pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter_24pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter_24pt-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Base Styles */
 * {
@@ -146,19 +190,20 @@ html {
 
 /* KILOM Custom Styles */
 .font-logo {
-    font-family: 'Inter', 'Pilcrow Rounded', sans-serif;
-    font-weight: 800;
+    font-family: 'Pilcrow Rounded', sans-serif;
+    font-weight: 500;
     letter-spacing: -0.02em;
 }
 
 .font-heading {
-    font-family: 'Inter', 'Clash Display', sans-serif;
-    font-weight: 800;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
     letter-spacing: -0.03em;
 }
 
 .font-body {
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .text-gold {
