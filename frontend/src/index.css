@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Fonts - KILOM Premium */
+/* Custom Fonts - KILOM Premium 
+   NOTE: Remplacez ces Google Fonts par vos polices personnalisées quand vous les ajoutez
+   Placez vos fichiers dans /app/frontend/public/fonts/ et décommentez les @font-face ci-dessous
+*/
+
+/*
 @font-face {
     font-family: 'Pilcrow Rounded';
     src: url('/fonts/pilcrow-rounded.otf') format('opentype');
@@ -26,6 +33,7 @@
     font-style: normal;
     font-display: swap;
 }
+*/
 
 /* Base Styles */
 * {
@@ -126,12 +134,15 @@ html {
 
 /* KILOM Custom Styles */
 .font-logo {
-    font-family: 'Pilcrow Rounded', sans-serif;
+    font-family: 'Inter', 'Pilcrow Rounded', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
 .font-heading {
-    font-family: 'Clash Display', sans-serif;
-    font-weight: bold;
+    font-family: 'Inter', 'Clash Display', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.03em;
 }
 
 .font-body {
