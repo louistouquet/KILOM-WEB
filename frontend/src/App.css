@@ -1,3 +1,8 @@
+.App {
+  min-height: 100vh;
+  background-color: #0D0D0E;
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -10,7 +15,7 @@
 }
 
 .App-header {
-    background-color: #0f0f10;
+    background-color: #0D0D0E;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +26,7 @@
 }
 
 .App-link {
-    color: #61dafb;
+    color: #F1C086;
 }
 
 @keyframes App-logo-spin {
@@ -31,4 +36,81 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+/* Parallax and Scroll Effects */
+.parallax-container {
+    perspective: 1000px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse-gold {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(241, 192, 134, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(241, 192, 134, 0.6);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-pulse-gold {
+    animation: pulse-gold 2s ease-in-out infinite;
 }
