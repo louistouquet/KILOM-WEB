@@ -7,22 +7,22 @@ const Footer = () => {
 
   const footerLinks = {
     product: [
-      { label: 'Fonctionnalités', href: '#how-it-works' },
-      { label: 'Tarifs', href: '#pricing' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'Mises à jour', href: '#' },
+      { label: 'Fonctionnalités', href: '/#how-it-works' },
+      { label: 'Tarifs', href: '/#pricing' },
+      { label: 'FAQ', href: '/#faq' },
+      { label: 'Mises à jour', href: '/' },
     ],
     legal: [
-      { label: 'Conditions générales', href: '#' },
-      { label: 'Politique de confidentialité', href: '#' },
-      { label: 'Mentions légales', href: '#' },
-      { label: 'CGV', href: '#' },
+      { label: 'Conditions générales', href: '/cgu' },
+      { label: 'Politique de confidentialité', href: '/privacy' },
+      { label: 'Mentions légales', href: '/legal' },
+      { label: 'CGV', href: '/cgv' },
     ],
     company: [
-      { label: 'À propos', href: '#' },
-      { label: 'Contact', href: 'mailto:contact@kilom.fr' },
-      { label: 'Blog', href: '#' },
-      { label: 'Carrières', href: '#' },
+      { label: 'À propos', href: '/' },
+      { label: 'Contact', href: '/contact' },
+      { label: 'Blog', href: '/' },
+      { label: 'Carrières', href: '/' },
     ],
   };
 
