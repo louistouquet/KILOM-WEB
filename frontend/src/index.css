@@ -64,6 +64,18 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Performance Optimization */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* GPU Acceleration for animations */
+.gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
 /* Selection Color */
 ::selection {
     background-color: #F1C086;
@@ -195,11 +207,14 @@ html {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Button Hover Effects */
+/* Button Hover Effects - Optimized */
 .btn-gold {
     background-color: #F1C086;
     color: #0D0D0E;
-    transition: all 0.3s ease;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 0.2s ease;
+    will-change: transform;
 }
 
 .btn-gold:hover {
@@ -212,11 +227,16 @@ html {
     border: 2px solid #F1C086;
     color: #F1C086;
     background-color: transparent;
-    transition: all 0.3s ease;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 0.2s ease,
+                color 0.2s ease;
+    will-change: transform;
 }
 
 .btn-outline-gold:hover {
     background-color: #F1C086;
     color: #0D0D0E;
     box-shadow: 0 8px 24px rgba(241, 192, 134, 0.3);
+    transform: translateY(-2px);
 }

@@ -28,8 +28,8 @@ const Header = () => {
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0D0D0E]/95 backdrop-blur-lg border-b border-white/10'
-          : 'bg-transparent'
+          ? 'bg-[#0D0D0E]/70 backdrop-blur-xl border-b border-white/10'
+          : 'bg-[#0D0D0E]/30 backdrop-blur-md'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -50,7 +50,7 @@ const Header = () => {
               <motion.a
                 key={item.href}
                 href={item.href}
-                className="font-body text-sm text-white/80 hover:text-gold transition-colors duration-300"
+                className="font-body text-sm text-white/80 hover:text-gold transition-colors duration-200"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 + 0.3 }}
