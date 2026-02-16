@@ -1,6 +1,6 @@
 import React, { useRef, useMemo, Suspense } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Float, MeshDistortMaterial, Environment, Stars } from '@react-three/drei';
+import { Canvas, useFrame, extend } from '@react-three/fiber';
+import { Stars } from '@react-three/drei';
 import * as THREE from 'three';
 
 // Stylized low-poly car
