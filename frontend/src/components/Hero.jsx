@@ -159,16 +159,16 @@ const Hero = () => {
               variants={floatingVariants}
               animate="animate"
               transition={{ delay: index * 0.2 }}
-              className="glass-effect rounded-2xl p-6 hover:border-gold/50 transition-all duration-300 group"
+              className="glass-effect rounded-2xl p-8 hover:border-gold/50 transition-all duration-300 group"
               whileHover={{ y: -8 }}
             >
-              <div className="bg-gold/10 w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors duration-300">
-                <feature.icon className="w-7 h-7 text-gold" />
+              <div className="bg-gold/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors duration-300">
+                <feature.icon className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="font-heading text-xl text-white mb-2">
+              <h3 className="font-heading text-2xl text-white mb-3">
                 {feature.title}
               </h3>
-              <p className="font-body text-sm text-white/60">
+              <p className="font-body text-sm text-white/60 leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>
