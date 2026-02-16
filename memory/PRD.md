@@ -241,16 +241,19 @@ src/
 
 ## 📦 Backlog & Prochaines étapes
 
-### P0 (Critique - À faire maintenant)
-- [ ] **Ajouter les polices personnalisées**
-  - Uploader les fichiers dans `/app/frontend/public/fonts/`
-  - Choisir les bonnes versions (voir `/app/POLICES_GUIDE.md`)
-  - Mettre à jour `index.css` avec les @font-face
+### P0 (Terminé ✅)
+- [x] **Sections P1** - TrustBar, BeforeAfter, SavingsCalculator, Testimonials
+- [x] **Header amélioré** - Transparence, blur, hover doré, animations fluides
+- [x] **Polices personnalisées** - Clash Display + Plus Jakarta Sans configurées
 
-### P1 (Important)
+### P1 (À faire - Important)
 - [ ] **Backend du formulaire de contact**
+  - Intégrer Formspree ou service email (SendGrid, Resend)
   - API endpoint pour envoyer les emails
-  - Intégration avec un service email (SendGrid, AWS SES)
+
+- [ ] **Section "Comment ça marche" interactive**
+  - Animations plus dynamiques sur les 4 étapes
+  - Éventuellement illustrations animées
 
 - [ ] **Compléter les informations légales**
   - Remplir les [À compléter] dans les pages légales
@@ -258,32 +261,18 @@ src/
   - Informations hébergeur
   - Nom du médiateur
 
+### P2 (Nice to have - Futur)
+- [ ] **Scène 3D Hero** - Intégration Spline pour effet immersif "Awwwards"
 - [ ] **SEO & Performance**
   - Meta tags (title, description, OG tags) pour chaque page
-  - Sitemap.xml
-  - robots.txt
-  - Optimisation des images (lazy loading, WebP)
-  - Preload des polices custom
+  - Sitemap.xml, robots.txt
+  - Optimisation images (lazy loading actif, WebP)
 
-- [ ] **Cookie consent**
-  - Banner cookies conforme RGPD
-  - Gestionnaire de préférences cookies
+- [ ] **Cookie consent** - Banner cookies conforme RGPD
 
-### P2 (Nice to have)
-- [ ] **Simulateur d'économies**
-  - Calculateur interactif "Estimez vos économies"
-  - Engagement utilisateur
+- [ ] **Blog** - Articles sur la gestion des IK
 
-- [ ] **Section Témoignages**
-  - Avis clients réels
-  - Crédibilité et conversion
-
-- [ ] **Blog**
-  - Articles sur la gestion des IK
-  - SEO content
-
-- [ ] **Multilingue**
-  - Version anglaise du site
+- [ ] **Multilingue** - Version anglaise du site
 
 ---
 
