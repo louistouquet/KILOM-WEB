@@ -44,7 +44,7 @@ const HowItWorks = () => {
     <section
       id="how-it-works"
       ref={sectionRef}
-      className="relative py-32 bg-[#0D0D0E] overflow-hidden"
+      className="relative py-40 md:py-48 bg-[#0D0D0E] overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">

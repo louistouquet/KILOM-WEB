@@ -38,7 +38,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0D0D0E]">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0D0D0E] py-32 md:py-48">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0E]/60 via-[#0D0D0E]/80 to-[#0D0D0E] z-10" />
@@ -49,6 +49,7 @@ const Hero = () => {
           src="https://images.unsplash.com/photo-1760012945940-74d6bf54c0fb"
           alt="Luxury automotive"
           className="w-full h-full object-cover"
+          loading="eager"
         />
       </div>
 
@@ -78,16 +79,23 @@ const Hero = () => {
           </span>
         </motion.div>
 
-        {/* Main Heading */}
+        {/* Main Heading - Hiérarchie typographique renforcée */}
         <motion.h1
           variants={itemVariants}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-tight"
+          className="leading-tight mb-8"
         >
-          Transformez vos
-          <br />
-          <span className="gradient-text">déplacements</span>
-          <br />
-          en économies
+          {/* Ligne 1 - Neutre, Semibold */}
+          <span className="block font-heading text-5xl md:text-7xl lg:text-8xl text-white font-semibold mb-2">
+            Transformez vos
+          </span>
+          {/* Ligne 2 - Emphase, Bold, Or */}
+          <span className="block font-heading text-5xl md:text-7xl lg:text-8xl text-gold font-bold">
+            déplacements
+          </span>
+          {/* Ligne 3 - Neutre, Semibold */}
+          <span className="block font-heading text-5xl md:text-7xl lg:text-8xl text-white font-semibold">
+            en économies
+          </span>
         </motion.h1>
 
         {/* Subheading */}

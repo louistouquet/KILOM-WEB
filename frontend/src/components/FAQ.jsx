@@ -45,7 +45,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="relative py-32 bg-[#0D0D0E] overflow-hidden">
+    <section id="faq" className="relative py-40 md:py-48 bg-[#0D0D0E] overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 right-10 w-96 h-96 bg-gold rounded-full blur-[120px]" />
