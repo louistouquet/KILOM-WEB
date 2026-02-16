@@ -117,7 +117,7 @@ const HowItWorks = () => {
 
                   {/* Icon */}
                   <div className="bg-gold/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-all duration-300 group-hover:scale-110">
-                    <step.icon className="w-8 h-8 text-gold" />
+                    <step.icon className="w-9 h-9 text-gold" />
                   </div>
 
                   {/* Content */}
