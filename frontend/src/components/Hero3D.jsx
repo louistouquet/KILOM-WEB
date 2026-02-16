@@ -227,7 +227,7 @@ function GoldParticles({ count = 100 }) {
   );
 }
 
-// Abstract background sphere
+// Abstract background sphere - simplified version
 function BackgroundSphere() {
   const meshRef = useRef();
 
@@ -241,11 +241,8 @@ function BackgroundSphere() {
   return (
     <mesh ref={meshRef} position={[0, 2, -8]} scale={4}>
       <icosahedronGeometry args={[1, 1]} />
-      <MeshDistortMaterial
+      <meshStandardMaterial
         color="#F1C086"
-        attach="material"
-        distort={0.3}
-        speed={2}
         roughness={0.4}
         metalness={0.8}
         opacity={0.15}
