@@ -89,8 +89,11 @@ async def get_status_checks():
 async def send_contact_email(request: ContactFormRequest):
     """
     Send contact form email via Resend.
-    The email is sent FROM Resend's default sender TO contact@kilom.fr
-    with reply-to set to the user's email.
+    
+    NOTE: In Resend test mode, emails can only be sent to verified emails.
+    To send to contact@kilom.fr in production:
+    1. Verify your domain at resend.com/domains
+    2. Update CONTACT_EMAIL and from address to use your verified domain
     """
     
     # Build HTML email content
@@ -127,9 +130,13 @@ async def send_contact_email(request: ContactFormRequest):
     </div>
     """
     
+    # In test mode, Resend only allows sending to verified email
+    # Once domain is verified, change to: "noreply@kilom.fr" and send to CONTACT_EMAIL
+    test_mode_email = "louistouquetpro@gmail.com"  # Your verified Resend email
+    
     params = {
         "from": "KILOM Contact <onboarding@resend.dev>",
-        "to": [CONTACT_EMAIL],
+        "to": [test_mode_email],  # Change to [CONTACT_EMAIL] after domain verification
         "reply_to": request.email,
         "subject": f"[KILOM] {request.subject}",
         "html": html_content
@@ -139,7 +146,7 @@ async def send_contact_email(request: ContactFormRequest):
         # Run sync SDK in thread to keep FastAPI non-blocking
         email_response = await asyncio.to_thread(resend.Emails.send, params)
         
-        logger.info(f"Email sent successfully to {CONTACT_EMAIL} from {request.email}")
+        logger.info(f"Email sent successfully from {request.email}")
         
         # Store contact in database for records
         contact_record = {
