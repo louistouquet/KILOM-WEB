@@ -1,27 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom Fonts - KILOM Premium */
 
-/* Pilcrow Rounded - Pour le logo */
-@font-face {
-    font-family: 'Pilcrow Rounded';
-    src: url('./assets/fonts/PilcrowRounded-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pilcrow Rounded';
-    src: url('./assets/fonts/PilcrowRounded-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Clash Display - Pour les titres */
+/* Clash Display - Pour logo ET titres */
 @font-face {
     font-family: 'Clash Display';
     src: url('./assets/fonts/ClashDisplay-Bold.otf') format('opentype');
@@ -38,46 +23,15 @@
     font-display: swap;
 }
 
-/* Inter - Pour le corps de texte (24pt = taille optimale web) */
 @font-face {
-    font-family: 'Inter';
-    src: url('./assets/fonts/Inter_24pt-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./assets/fonts/Inter_24pt-Medium.ttf') format('truetype');
+    font-family: 'Clash Display';
+    src: url('./assets/fonts/ClashDisplay-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src: url('./assets/fonts/Inter_24pt-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./assets/fonts/Inter_24pt-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./assets/fonts/Inter_24pt-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
+/* Plus Jakarta Sans sera utilisé via Google Fonts (déjà optimisé WOFF2) pour le corps */
 
 /* Base Styles */
 * {
@@ -190,8 +144,8 @@ html {
 
 /* KILOM Custom Styles */
 .font-logo {
-    font-family: 'Pilcrow Rounded', sans-serif;
-    font-weight: 500;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
     letter-spacing: -0.02em;
 }
 
@@ -202,7 +156,7 @@ html {
 }
 
 .font-body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
 }
 
