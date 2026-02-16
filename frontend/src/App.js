@@ -3,8 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import TrustBar from "./components/TrustBar";
 import HowItWorks from "./components/HowItWorks";
+import BeforeAfter from "./components/BeforeAfter";
+import SavingsCalculator from "./components/SavingsCalculator";
 import Pricing from "./components/Pricing";
+import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
@@ -16,8 +20,12 @@ import CGV from "./components/CGV";
 const HomePage = () => (
   <main>
     <Hero />
+    <TrustBar />
     <HowItWorks />
+    <BeforeAfter />
+    <SavingsCalculator />
     <Pricing />
+    <Testimonials />
     <FAQ />
   </main>
 );
