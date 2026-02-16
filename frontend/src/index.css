@@ -193,11 +193,14 @@ html {
     box-shadow: 0 0 40px rgba(241, 192, 134, 0.5);
 }
 
-/* Glass Morphism */
+/* Glass Morphism - Enhanced */
 .glass-effect {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.05) 0%, 
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
