@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Shield, TrendingUp } from 'lucide-react';
+
+// Lazy load 3D scene for better initial load
+const Hero3D = lazy(() => import('./Hero3D'));
 
 const Hero = () => {
   const containerVariants = {
@@ -39,22 +42,20 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0D0D0E] py-32 md:py-48">
-      {/* Background Image with Overlay */}
+      {/* 3D Scene Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0E]/60 via-[#0D0D0E]/80 to-[#0D0D0E] z-10" />
-        <motion.img
-          initial={{ scale: 1.2, opacity: 0 }}
-          animate={{ scale: 1, opacity: 0.2 }}
-          transition={{ duration: 1.5 }}
-          src="https://images.unsplash.com/photo-1760012945940-74d6bf54c0fb"
-          alt="Luxury automotive"
-          className="w-full h-full object-cover"
-          loading="eager"
-        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0D0D0E]/30 to-[#0D0D0E] z-10 pointer-events-none" />
+        <Suspense fallback={
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-12 h-12 border-4 border-gold/30 border-t-gold rounded-full animate-spin" />
+          </div>
+        }>
+          <Hero3D />
+        </Suspense>
       </div>
 
       {/* Animated Grid Background */}
-      <div className="absolute inset-0 z-0 opacity-10">
+      <div className="absolute inset-0 z-0 opacity-5">
         <div className="absolute inset-0" style={{
           backgroundImage: 'linear-gradient(#F1C086 1px, transparent 1px), linear-gradient(90deg, #F1C086 1px, transparent 1px)',
           backgroundSize: '50px 50px'
