@@ -271,34 +271,25 @@ src/
 - [x] **Sections P1** - TrustBar, BeforeAfter, SavingsCalculator, Testimonials
 - [x] **Header amélioré** - Transparence, blur, hover doré, animations fluides
 - [x] **Polices personnalisées** - Clash Display + Plus Jakarta Sans configurées
+- [x] **Formulaire Contact avec Resend** - Envoi d'emails fonctionnel
+- [x] **SEO complet** - Meta tags, OG, Twitter, Schema.org, sitemap, robots.txt
 
 ### P1 (À faire - Important)
-- [ ] **Backend du formulaire de contact**
-  - Intégrer Formspree ou service email (SendGrid, Resend)
-  - API endpoint pour envoyer les emails
+- [ ] **Vérifier domaine Resend** - Pour envoyer à contact@kilom.fr au lieu de l'email de test
+  - Aller sur resend.com/domains
+  - Ajouter et vérifier le domaine kilom.fr
+  - Changer le code dans server.py (ligne avec test_mode_email)
 
-- [ ] **Section "Comment ça marche" interactive**
-  - Animations plus dynamiques sur les 4 étapes
-  - Éventuellement illustrations animées
+- [ ] **Scène Hero 3D avec Spline** (optionnel)
+  - Package @splinetool/react-spline installé
+  - Créer une scène sur spline.design (voiture sur route)
+  - Intégrer avec `<Spline scene="URL" />`
 
-- [ ] **Compléter les informations légales**
-  - Remplir les [À compléter] dans les pages légales
-  - Nom du directeur de publication
-  - Informations hébergeur
-  - Nom du médiateur
+- [ ] **OG Image** - Créer une image de partage social (1200x630px)
 
 ### P2 (Nice to have - Futur)
-- [ ] **Scène 3D Hero** - Intégration Spline pour effet immersif "Awwwards"
-- [ ] **SEO & Performance**
-  - Meta tags (title, description, OG tags) pour chaque page
-  - Sitemap.xml, robots.txt
-  - Optimisation images (lazy loading actif, WebP)
-
-- [ ] **Cookie consent** - Banner cookies conforme RGPD
-
-- [ ] **Blog** - Articles sur la gestion des IK
-
-- [ ] **Multilingue** - Version anglaise du site
+- [ ] **Cookie consent RGPD** - Banner si nécessaire (Plausible n'en a pas besoin)
+- [ ] **Favicon personnalisé** - Créer les icônes aux différentes tailles
 
 ---
 
