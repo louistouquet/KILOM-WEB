@@ -2,9 +2,6 @@ import React, { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Shield, TrendingUp } from 'lucide-react';
 
-// Lazy load 3D scene for better initial load
-const Hero3D = lazy(() => import('./Hero3D'));
-
 const Hero = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -42,16 +39,58 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0D0D0E] py-32 md:py-48">
-      {/* 3D Scene Background */}
+      {/* Animated Background with Car Silhouette */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0D0D0E]/30 to-[#0D0D0E] z-10 pointer-events-none" />
-        <Suspense fallback={
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-12 h-12 border-4 border-gold/30 border-t-gold rounded-full animate-spin" />
-          </div>
-        }>
-          <Hero3D />
-        </Suspense>
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0E]/40 via-[#0D0D0E]/60 to-[#0D0D0E] z-10" />
+        
+        {/* Animated road lines */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent animate-pulse" />
+          <div className="absolute top-1/2 translate-y-20 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent animate-pulse" style={{ animationDelay: '0.5s' }} />
+          <div className="absolute top-1/2 translate-y-40 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/10 to-transparent animate-pulse" style={{ animationDelay: '1s' }} />
+        </div>
+        
+        {/* Floating gold particles */}
+        <div className="absolute inset-0">
+          {[...Array(20)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-1 h-1 bg-gold rounded-full"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                y: [0, -30, 0],
+                opacity: [0.2, 0.8, 0.2],
+              }}
+              transition={{
+                duration: 3 + Math.random() * 2,
+                repeat: Infinity,
+                delay: Math.random() * 2,
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Glowing orb */}
+        <motion.div
+          className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full"
+          style={{
+            background: 'radial-gradient(circle, rgba(241,192,134,0.15) 0%, transparent 70%)',
+            filter: 'blur(40px)',
+          }}
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+        />
       </div>
 
       {/* Animated Grid Background */}
