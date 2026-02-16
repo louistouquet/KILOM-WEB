@@ -260,15 +260,15 @@ src/
 
 ## 🚀 Déploiement & Environnement
 
-**URL de preview actuelle**: https://mileage-gold.preview.emergentagent.com
+**URL de preview actuelle**: https://kilom-showcase.preview.emergentagent.com
 
 **Pages accessibles:**
-- https://mileage-gold.preview.emergentagent.com/ (Page d'accueil)
-- https://mileage-gold.preview.emergentagent.com/contact
-- https://mileage-gold.preview.emergentagent.com/cgu
-- https://mileage-gold.preview.emergentagent.com/privacy
-- https://mileage-gold.preview.emergentagent.com/legal
-- https://mileage-gold.preview.emergentagent.com/cgv
+- https://kilom-showcase.preview.emergentagent.com/ (Page d'accueil)
+- https://kilom-showcase.preview.emergentagent.com/contact
+- https://kilom-showcase.preview.emergentagent.com/cgu
+- https://kilom-showcase.preview.emergentagent.com/privacy
+- https://kilom-showcase.preview.emergentagent.com/legal
+- https://kilom-showcase.preview.emergentagent.com/cgv
 
 ---
 
