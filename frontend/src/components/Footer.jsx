@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,6 @@ const Footer = () => {
       { label: 'Fonctionnalités', href: '/#how-it-works' },
       { label: 'Tarifs', href: '/#pricing' },
       { label: 'FAQ', href: '/#faq' },
-      { label: 'Mises à jour', href: '/' },
     ],
     legal: [
       { label: 'Conditions générales', href: '/cgu' },
@@ -19,18 +18,14 @@ const Footer = () => {
       { label: 'CGV', href: '/cgv' },
     ],
     company: [
-      { label: 'À propos', href: '/' },
+      { label: 'À propos', href: '/#hero' },
       { label: 'Contact', href: '/contact' },
-      { label: 'Blog', href: '/' },
-      { label: 'Carrières', href: '/' },
     ],
   };
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Mail, href: 'mailto:contact@kilom.fr', label: 'Email' },
+    { icon: Linkedin, href: 'https://linkedin.com/company/kilom', label: 'LinkedIn KILOM' },
+    { icon: Mail, href: 'mailto:contact@kilom.fr', label: 'Envoyer un email à KILOM' },
   ];
 
   return (
@@ -53,10 +48,10 @@ const Footer = () => {
             >
               <h3 className="font-logo text-4xl text-gold mb-4">KILOM</h3>
               <p className="font-body text-white/70 leading-relaxed mb-6 max-w-sm">
-                La solution premium pour automatiser la gestion de vos indemnités kilométriques. 
+                La solution premium pour automatiser la gestion de vos indemnités kilométriques.
                 Simple, intelligent, fiscalement conforme.
               </p>
-              
+
               {/* Social Links */}
               <div className="flex items-center gap-4">
                 {socialLinks.map((social, index) => (
@@ -154,7 +149,7 @@ const Footer = () => {
           <p className="font-body text-white/50 text-sm">
             © {currentYear} KILOM. Tous droits réservés.
           </p>
-          
+
           <div className="flex items-center gap-6">
             <a
               href="#"

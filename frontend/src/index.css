@@ -105,11 +105,11 @@ html {
 
 @layer base {
   :root {
-        --background: 13 13 14;
+        --background: 240 4% 5%;
         --foreground: 0 0% 98%;
-        --card: 13 13 14;
+        --card: 240 4% 5%;
         --card-foreground: 0 0% 98%;
-        --popover: 13 13 14;
+        --popover: 240 4% 5%;
         --popover-foreground: 0 0% 98%;
         --primary: 32 70% 73%;
         --primary-foreground: 13 13 14;
