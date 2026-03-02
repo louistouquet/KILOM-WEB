@@ -21,7 +21,7 @@ const Privacy = () => {
             <br />
             <span className="gradient-text">Confidentialité</span>
           </h1>
-          <p className="font-body text-white/60">Dernière mise à jour : 14 février 2025</p>
+          <p className="font-body text-white/60">Dernière mise à jour : 2 mars 2026</p>
         </motion.div>
 
         <motion.div
@@ -33,200 +33,113 @@ const Privacy = () => {
           <section>
             <h2 className="font-heading text-2xl text-gold mb-4">1. Introduction</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              KILOM SAS accorde une importance primordiale à la protection de vos données personnelles. 
-              Cette politique de confidentialité explique quelles données nous collectons, comment nous 
-              les utilisons, et vos droits en tant qu'utilisateur conformément au Règlement Général sur 
-              la Protection des Données (RGPD).
+              La présente politique détaille comment l'application <strong>KILOM</strong> collecte et traite vos données personnelles. 
+              En utilisant l'Application, vous acceptez ces conditions. Notre priorité est de minimiser la collecte de données 
+              au strict nécessaire pour automatiser vos déclarations d'indemnités kilométriques, dans le respect du Règlement Général sur la Protection des Données (RGPD).
             </p>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">2. Responsable du traitement</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">2. Données collectées et Permissions</h2>
             <p className="font-body text-white/80 leading-relaxed mb-4">
-              Le responsable du traitement des données est :
-            </p>
-            <div className="font-body text-white/80 leading-relaxed ml-4">
-              <p><strong>KILOM SAS</strong></p>
-              <p>123 Avenue des Champs-Élysées</p>
-              <p>75008 Paris, France</p>
-              <p>Email : <a href="mailto:dpo@kilom.fr" className="text-gold hover:underline">dpo@kilom.fr</a></p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">3. Données collectées</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Nous collectons les catégories de données suivantes :
+              Pour fournir le service de calcul d'indemnités kilométriques, l'Application requiert les accès suivants :
             </p>
             
-            <h3 className="font-heading text-xl text-white mb-3 mt-6">3.1 Données d'identification</h3>
+            <h3 className="font-heading text-xl text-white mb-3 mt-6">A. Accès au Calendrier (Sensible)</h3>
             <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Nom, prénom</li>
-              <li>Adresse email</li>
-              <li>Numéro de téléphone (optionnel)</li>
+              <li><strong>Nature des données :</strong> Titres, descriptions, lieux, dates et horaires des événements de votre calendrier.</li>
+              <li><strong>Finalité stricte :</strong> Ces données sont analysées pour identifier vos déplacements professionnels et calculer automatiquement les distances parcourues.</li>
+              <li><strong>Traitement :</strong> Les données du calendrier sont transmises à notre serveur sécurisé uniquement lorsque vous lancez une synchronisation ou une analyse.</li>
             </ul>
 
-            <h3 className="font-heading text-xl text-white mb-3 mt-6">3.2 Données de calendrier</h3>
+            <h3 className="font-heading text-xl text-white mb-3 mt-6">B. Données de Véhicule</h3>
             <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Événements de votre calendrier professionnel (titre, lieu, date, heure)</li>
-              <li>Connexion OAuth avec votre fournisseur de calendrier (Google, Outlook, etc.)</li>
+              <li><strong>Nature :</strong> Puissance fiscale (CV), type de motorisation, et type de véhicule.</li>
+              <li><strong>Finalité :</strong> Application du barème fiscal officiel de l'administration pour le calcul du montant exact des indemnités.</li>
             </ul>
 
-            <h3 className="font-heading text-xl text-white mb-3 mt-6">3.3 Données de déplacement</h3>
+            <h3 className="font-heading text-xl text-white mb-3 mt-6">C. Identité et Contact</h3>
             <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Adresses de départ et d'arrivée</li>
-              <li>Distances calculées</li>
-              <li>Dates et heures des trajets</li>
-            </ul>
-
-            <h3 className="font-heading text-xl text-white mb-3 mt-6">3.4 Données de paiement</h3>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Informations de facturation (traitées par notre prestataire de paiement sécurisé)</li>
-              <li>Historique des transactions</li>
-            </ul>
-
-            <h3 className="font-heading text-xl text-white mb-3 mt-6">3.5 Données techniques</h3>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Adresse IP</li>
-              <li>Type de navigateur et système d'exploitation</li>
-              <li>Données de connexion et d'utilisation du service</li>
+              <li>Adresse email (pour l'authentification).</li>
+              <li>Adresses favorites (Domicile, Bureau, etc) pour le calcul des trajets récurrents.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">4. Finalités du traitement</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">3. Utilisation de l'Intelligence Artificielle (IA)</h2>
             <p className="font-body text-white/80 leading-relaxed mb-4">
-              Vos données sont utilisées pour :
+              L'Application utilise l'API <strong>Google Gemini</strong> (fournie par Google Cloud) pour l'analyse sémantique de vos événements (par exemple, distinguer un rendez-vous client d'un rendez-vous personnel).
             </p>
             <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Fournir et améliorer le service KILOM</li>
-              <li>Identifier automatiquement vos déplacements professionnels</li>
-              <li>Calculer les distances de vos trajets</li>
-              <li>Générer vos exports comptables</li>
-              <li>Gérer votre compte et votre abonnement</li>
-              <li>Vous envoyer des communications importantes relatives au service</li>
-              <li>Assurer la sécurité et prévenir la fraude</li>
-              <li>Respecter nos obligations légales</li>
+              <li><strong>Confidentialité IA :</strong> Les données soumises à l'IA sont traitées de manière éphémère pour l'analyse.</li>
+              <li><strong>Pas d'entraînement :</strong> Conformément aux conditions "Enterprise" de Google Cloud, vos données ne sont pas utilisées pour entraîner les modèles publics d'intelligence artificielle de Google.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">5. Base légale du traitement</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">4. Partage des données (Sous-traitants)</h2>
             <p className="font-body text-white/80 leading-relaxed mb-4">
-              Nous traitons vos données sur les bases légales suivantes :
+              Vos données ne sont jamais vendues. Elles sont partagées uniquement avec nos prestataires techniques agissant en tant que sous-traitants, strictement nécessaires au fonctionnement du service :
+            </p>
+            <div className="bg-white/5 rounded-xl p-4 border border-white/10 mt-4 space-y-3">
+              <p className="font-body text-white/80"><strong>Supabase :</strong> Hébergement de la base de données et authentification (Irlande).</p>
+              <p className="font-body text-white/80"><strong>Google Cloud (Cloud Run) :</strong> Serveur de calcul et backend (Belgique).</p>
+              <p className="font-body text-white/80"><strong>Mapbox :</strong> Calcul des distances et géocodage (États-Unis).</p>
+              <p className="font-body text-white/80"><strong>Google Gemini (Vertex AI) :</strong> Analyse sémantique des événements.</p>
+              <p className="font-body text-white/80"><strong>Adapty :</strong> Gestion des abonnements et des achats in-app (États-Unis).</p>
+              <p className="font-body text-white/80"><strong>Resend :</strong> Envoi des emails transactionnels et exports (États-Unis).</p>
+            </div>
+            <p className="font-body text-white/60 text-sm mt-4">
+              *Certains de nos prestataires étant situés hors de l'Union Européenne, les transferts de données sont sécurisés par des Clauses Contractuelles Types (CCT) ou des mécanismes d'adéquation reconnus.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-heading text-2xl text-gold mb-4">5. Conservation, Contrôle et Suppression des données</h2>
+            
+            <h3 className="font-heading text-xl text-white mb-3">Durée de conservation</h3>
+            <p className="font-body text-white/80 leading-relaxed mb-4">
+              Nous conservons vos données (trajets, historique, véhicule) tant que votre abonnement est actif.
+            </p>
+
+            <h3 className="font-heading text-xl text-white mb-3">Suppression en fin d'abonnement (Politique stricte)</h3>
+            <p className="font-body text-white/80 leading-relaxed mb-4">
+              Si vous résiliez votre abonnement :
+            </p>
+            <ol className="font-body text-white/80 leading-relaxed space-y-2 list-decimal list-inside ml-4 mb-4">
+              <li>Vos données sont conservées pendant une <strong>période de grâce de 30 jours</strong> pour vous permettre de changer d'avis et de vous réabonner.</li>
+              <li>Passé ce délai de 30 jours sans réactivation, <strong>l'intégralité de vos données (trajets, adresses, véhicule) est définitivement et irréversiblement supprimée</strong> de nos serveurs.</li>
+            </ol>
+
+            <h3 className="font-heading text-xl text-white mb-3">Contrôle de vos données et Droit à l'oubli</h3>
+            <p className="font-body text-white/80 leading-relaxed mb-4">
+              Conformément au RGPD et aux exigences d'Apple et de Google, vous disposez d'un contrôle total sur vos données. Vous pouvez effectuer les actions suivantes à tout moment depuis l'Application, en vous rendant dans <strong>Profil &gt; Paramètres &gt; Données</strong> :
             </p>
             <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li><strong>Exécution du contrat :</strong> Pour fournir le service KILOM</li>
-              <li><strong>Consentement :</strong> Pour l'accès à votre calendrier</li>
-              <li><strong>Intérêt légitime :</strong> Pour améliorer le service et assurer la sécurité</li>
-              <li><strong>Obligation légale :</strong> Pour la facturation et la comptabilité</li>
+              <li><strong>Supprimer les données de trajet :</strong> Cette action efface uniquement l'historique de vos trajets enregistrés et calculés, tout en conservant votre compte et votre abonnement actifs.</li>
+              <li><strong>Supprimer mon compte :</strong> Cette action entraîne la suppression immédiate, définitive et irréversible de votre compte, de votre profil et de l'intégralité de vos données (trajets, paramètres, véhicule), sans aucun délai de carence.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">6. Partage des données</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Nous ne vendons jamais vos données personnelles. Nous pouvons les partager avec :
-            </p>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li><strong>Prestataires de services :</strong> Mapbox (calcul d'itinéraires), hébergement cloud (AWS/Google Cloud)</li>
-              <li><strong>Processeurs de paiement :</strong> Pour gérer les transactions (Stripe)</li>
-              <li><strong>Autorités légales :</strong> Si requis par la loi</li>
-            </ul>
-            <p className="font-body text-white/80 leading-relaxed mt-4">
-              Tous nos prestataires sont contractuellement tenus de respecter le RGPD et de protéger vos données.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">7. Durée de conservation</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Nous conservons vos données :
-            </p>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li><strong>Données de compte :</strong> Pendant la durée de votre abonnement + 3 ans après résiliation</li>
-              <li><strong>Données de trajets :</strong> Pendant la durée de votre abonnement + 3 ans (obligations fiscales)</li>
-              <li><strong>Données de facturation :</strong> 10 ans (obligations légales)</li>
-              <li><strong>Données techniques :</strong> Maximum 13 mois</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">8. Sécurité des données</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Nous mettons en œuvre des mesures de sécurité strictes :
-            </p>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Chiffrement SSL/TLS pour toutes les communications</li>
-              <li>Chiffrement des données au repos</li>
-              <li>Authentification sécurisée et gestion des accès</li>
-              <li>Sauvegardes régulières et plans de reprise d'activité</li>
-              <li>Audits de sécurité réguliers</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">9. Vos droits</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Conformément au RGPD, vous disposez des droits suivants :
-            </p>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li><strong>Droit d'accès :</strong> Obtenir une copie de vos données</li>
-              <li><strong>Droit de rectification :</strong> Corriger vos données inexactes</li>
-              <li><strong>Droit à l'effacement :</strong> Supprimer vos données (« droit à l'oubli »)</li>
-              <li><strong>Droit à la limitation :</strong> Limiter le traitement de vos données</li>
-              <li><strong>Droit à la portabilité :</strong> Récupérer vos données dans un format structuré</li>
-              <li><strong>Droit d'opposition :</strong> Vous opposer au traitement de vos données</li>
-              <li><strong>Droit de retirer votre consentement :</strong> À tout moment</li>
-            </ul>
-            <p className="font-body text-white/80 leading-relaxed mt-4">
-              Pour exercer vos droits, contactez-nous à :{' '}
-              <a href="mailto:dpo@kilom.fr" className="text-gold hover:underline">dpo@kilom.fr</a>
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">10. Cookies</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Nous utilisons des cookies essentiels au fonctionnement du service et des cookies analytiques 
-              (avec votre consentement) pour améliorer l'expérience utilisateur. Vous pouvez gérer vos 
-              préférences cookies à tout moment depuis les paramètres de votre navigateur.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">11. Transferts internationaux</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">6. Sécurité des données</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              Vos données sont hébergées dans l'Union Européenne. En cas de transfert hors UE, 
-              nous nous assurons que des garanties appropriées sont en place (clauses contractuelles types de la Commission européenne).
+              Toutes les communications entre l'Application et nos serveurs sont chiffrées (HTTPS/SSL). 
+              L'accès à vos données est protégé par les protocoles de sécurité de Supabase Auth. 
+              Vos mots de passe et tokens d'accès ne sont jamais stockés en clair.
             </p>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">12. Modifications</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">7. Contact et Droits RGPD</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              Cette politique de confidentialité peut être modifiée. Nous vous notifierons de tout 
-              changement substantiel par email 30 jours avant son entrée en vigueur.
+              Vous disposez d'un droit d'accès, de rectification, de portabilité et de suppression de vos données. 
+              Pour toute question ou pour exercer vos droits, contactez notre support :
             </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">13. Réclamation</h2>
-            <p className="font-body text-white/80 leading-relaxed">
-              Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation 
-              auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) :{' '}
-              <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
-                www.cnil.fr
-              </a>
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">14. Contact</h2>
-            <p className="font-body text-white/80 leading-relaxed">
-              Pour toute question relative à cette politique :{' '}
-              <a href="mailto:dpo@kilom.fr" className="text-gold hover:underline">dpo@kilom.fr</a>
-            </p>
+            <div className="mt-4 font-body text-white/80">
+              <p><strong>Louis Touquet</strong></p>
+              <p>Email : <a href="mailto:contact@kilom.fr" className="text-gold hover:underline">contact@kilom.fr</a></p>
+            </div>
           </section>
         </motion.div>
       </div>
