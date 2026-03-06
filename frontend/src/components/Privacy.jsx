@@ -21,7 +21,7 @@ const Privacy = () => {
             <br />
             <span className="gradient-text">Confidentialité</span>
           </h1>
-          <p className="font-body text-white/60">Dernière mise à jour : 2 mars 2026</p>
+          <p className="font-body text-white/60">Dernière mise à jour : 6 mars 2026</p>
         </motion.div>
 
         <motion.div
@@ -33,7 +33,7 @@ const Privacy = () => {
           <section>
             <h2 className="font-heading text-2xl text-gold mb-4">1. Introduction</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              La présente politique détaille comment l'application <strong>KILOM</strong> collecte et traite vos données personnelles. 
+              La présente politique détaille comment l'application <strong>[NOM DE L'APP]</strong> collecte et traite vos données personnelles. 
               En utilisant l'Application, vous acceptez ces conditions. Notre priorité est de minimiser la collecte de données 
               au strict nécessaire pour automatiser vos déclarations d'indemnités kilométriques, dans le respect du Règlement Général sur la Protection des Données (RGPD).
             </p>
@@ -60,8 +60,8 @@ const Privacy = () => {
 
             <h3 className="font-heading text-xl text-white mb-3 mt-6">C. Identité et Contact</h3>
             <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Adresse email (pour l'authentification).</li>
-              <li>Adresses favorites (Domicile, Bureau, etc) pour le calcul des trajets récurrents.</li>
+              <li>Adresse email (pour l'authentification et l'envoi des exports comptables).</li>
+              <li>Adresses favorites (Domicile, Bureau) pour le calcul des trajets récurrents.</li>
             </ul>
           </section>
 
@@ -82,8 +82,8 @@ const Privacy = () => {
               Vos données ne sont jamais vendues. Elles sont partagées uniquement avec nos prestataires techniques agissant en tant que sous-traitants, strictement nécessaires au fonctionnement du service :
             </p>
             <div className="bg-white/5 rounded-xl p-4 border border-white/10 mt-4 space-y-3">
-              <p className="font-body text-white/80"><strong>Supabase :</strong> Hébergement de la base de données et authentification (Irlande).</p>
-              <p className="font-body text-white/80"><strong>Google Cloud (Cloud Run) :</strong> Serveur de calcul et backend (Belgique).</p>
+              <p className="font-body text-white/80"><strong>Supabase :</strong> Hébergement de la base de données ([LIEU SERVEUR SUPABASE, ex: UE]).</p>
+              <p className="font-body text-white/80"><strong>Google Cloud (Cloud Run) :</strong> Serveur de calcul et backend ([LIEU SERVEUR CLOUD RUN]).</p>
               <p className="font-body text-white/80"><strong>Mapbox :</strong> Calcul des distances et géocodage (États-Unis).</p>
               <p className="font-body text-white/80"><strong>Google Gemini (Vertex AI) :</strong> Analyse sémantique des événements.</p>
               <p className="font-body text-white/80"><strong>Adapty :</strong> Gestion des abonnements et des achats in-app (États-Unis).</p>
@@ -125,8 +125,8 @@ const Privacy = () => {
             <h2 className="font-heading text-2xl text-gold mb-4">6. Sécurité des données</h2>
             <p className="font-body text-white/80 leading-relaxed">
               Toutes les communications entre l'Application et nos serveurs sont chiffrées (HTTPS/SSL). 
-              L'accès à vos données est protégé par les protocoles de sécurité de Supabase Auth. 
-              Vos mots de passe et tokens d'accès ne sont jamais stockés en clair.
+              L'accès à vos données est protégé par notre système d'authentification interne sécurisé. 
+              Vos mots de passe et clés d'accès sont chiffrés et ne sont jamais stockés en clair.
             </p>
           </section>
 
@@ -134,10 +134,9 @@ const Privacy = () => {
             <h2 className="font-heading text-2xl text-gold mb-4">7. Contact et Droits RGPD</h2>
             <p className="font-body text-white/80 leading-relaxed">
               Vous disposez d'un droit d'accès, de rectification, de portabilité et de suppression de vos données. 
-              Pour toute question ou pour exercer vos droits, contactez notre support :
+              Pour toute question ou pour exercer vos droits, contactez le responsable du traitement à l'adresse suivante :
             </p>
             <div className="mt-4 font-body text-white/80">
-              <p><strong>Louis Touquet</strong></p>
               <p>Email : <a href="mailto:contact@kilom.fr" className="text-gold hover:underline">contact@kilom.fr</a></p>
             </div>
           </section>
