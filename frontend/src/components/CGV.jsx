@@ -43,8 +43,8 @@ const CGV = () => {
             <div className="font-body text-white/80 leading-relaxed space-y-2">
               <p>L'application KILOM est éditée par :</p>
               <p><strong>Statut :</strong> Entrepreneur Individuel (Auto-entreprise)</p>
-              <p><strong>N° SIREN :</strong> [TON SIREN]</p>
-              <p><strong>Siège social :</strong> [TON ADRESSE]</p>
+              <p><strong>N° SIREN :</strong> 989 010 004</p>
+              <p><strong>Siège social :</strong> 49 chemin Beckensteiner, Charbonnières les bains, 69260</p>
               <p><strong>Email :</strong> <a href="mailto:contact@kilom.fr" className="text-gold hover:underline">contact@kilom.fr</a></p>
             </div>
           </section>
