@@ -33,7 +33,7 @@ const Privacy = () => {
           <section>
             <h2 className="font-heading text-2xl text-gold mb-4">1. Introduction</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              La présente politique détaille comment l'application <strong>[NOM DE L'APP]</strong> collecte et traite vos données personnelles. 
+              La présente politique détaille comment l'application <strong>KILOM</strong> collecte et traite vos données personnelles. 
               En utilisant l'Application, vous acceptez ces conditions. Notre priorité est de minimiser la collecte de données 
               au strict nécessaire pour automatiser vos déclarations d'indemnités kilométriques, dans le respect du Règlement Général sur la Protection des Données (RGPD).
             </p>
@@ -82,8 +82,8 @@ const Privacy = () => {
               Vos données ne sont jamais vendues. Elles sont partagées uniquement avec nos prestataires techniques agissant en tant que sous-traitants, strictement nécessaires au fonctionnement du service :
             </p>
             <div className="bg-white/5 rounded-xl p-4 border border-white/10 mt-4 space-y-3">
-              <p className="font-body text-white/80"><strong>Supabase :</strong> Hébergement de la base de données ([LIEU SERVEUR SUPABASE, ex: UE]).</p>
-              <p className="font-body text-white/80"><strong>Google Cloud (Cloud Run) :</strong> Serveur de calcul et backend ([LIEU SERVEUR CLOUD RUN]).</p>
+              <p className="font-body text-white/80"><strong>Supabase :</strong> Hébergement de la base de données (Europe).</p>
+              <p className="font-body text-white/80"><strong>Google Cloud (Cloud Run) :</strong> Serveur de calcul et backend (Europe).</p>
               <p className="font-body text-white/80"><strong>Mapbox :</strong> Calcul des distances et géocodage (États-Unis).</p>
               <p className="font-body text-white/80"><strong>Google Gemini (Vertex AI) :</strong> Analyse sémantique des événements.</p>
               <p className="font-body text-white/80"><strong>Adapty :</strong> Gestion des abonnements et des achats in-app (États-Unis).</p>
@@ -124,7 +124,7 @@ const Privacy = () => {
           <section>
             <h2 className="font-heading text-2xl text-gold mb-4">6. Sécurité des données</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              Toutes les communications entre l'Application et nos serveurs sont chiffrées (HTTPS/SSL). 
+              Toutes les communications entre l'Application et nos serveurs sont chiffrées. 
               L'accès à vos données est protégé par notre système d'authentification interne sécurisé. 
               Vos mots de passe et clés d'accès sont chiffrés et ne sont jamais stockés en clair.
             </p>
