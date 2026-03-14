@@ -37,8 +37,8 @@ const LegalNotice = () => {
             </p>
             <div className="font-body text-white/80 leading-relaxed space-y-2 ml-4 bg-white/5 p-6 rounded-xl border border-white/10">
               <p><strong>Statut juridique :</strong> Entrepreneur Individuel (Auto-entreprise)</p>
-              <p><strong>Siège social :</strong> [TON ADRESSE OU ADRESSE DE DOMICILIATION]</p>
-              <p><strong>Numéro SIREN :</strong> [TON NUMÉRO SIREN]</p>
+              <p><strong>Siège social :</strong> 49 chemin Beckensteiner, Charbonnières les bains, 69260</p>
+              <p><strong>Numéro SIREN :</strong> 989 010 004</p>
               <p><strong>Email de contact :</strong> <a href="mailto:contact@kilom.fr" className="text-gold hover:underline">contact@kilom.fr</a></p>
             </div>
           </section>
@@ -53,10 +53,10 @@ const LegalNotice = () => {
                 <strong>Site Web (Landing Page) :</strong> Hébergé par Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis.
               </li>
               <li>
-                <strong>Serveur API (Backend) :</strong> Hébergé par Google Cloud Platform (via le service Cloud Run). Les serveurs sont localisés en [PRÉCISER LE LIEU, ex: Europe/Paris]. Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande.
+                <strong>Serveur API (Backend) :</strong> Hébergé par Google Cloud Platform (via le service Cloud Run). Les serveurs sont localisés en Europe. Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande.
               </li>
               <li>
-                <strong>Base de données :</strong> Hébergée par Supabase, Inc., fonctionnant sur l'infrastructure cloud sécurisée localisée en [PRÉCISER LE LIEU, ex: Europe].
+                <strong>Base de données :</strong> Hébergée par Supabase, Inc., fonctionnant sur l'infrastructure cloud sécurisée localisée en Europe.
               </li>
             </ul>
           </section>
