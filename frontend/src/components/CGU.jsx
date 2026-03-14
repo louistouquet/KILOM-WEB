@@ -21,7 +21,7 @@ const CGU = () => {
             <br />
             <span className="gradient-text">d'Utilisation</span>
           </h1>
-          <p className="font-body text-white/60">Dernière mise à jour : 14 février 2025</p>
+          <p className="font-body text-white/60">Dernière mise à jour : 14 mars 2026</p>
         </motion.div>
 
         <motion.div
@@ -31,133 +31,56 @@ const CGU = () => {
           className="glass-effect rounded-3xl p-8 md:p-12 border border-white/10 space-y-8"
         >
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">1. Objet</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">1. Objet et Nature du Service</h2>
             <p className="font-body text-white/80 leading-relaxed mb-4">
-              Les présentes Conditions Générales d'Utilisation (CGU) régissent l'utilisation du service KILOM, 
-              une plateforme SaaS de gestion automatisée des indemnités kilométriques.
+              Les présentes Conditions Générales d'Utilisation (CGU) régissent l'utilisation de l'application mobile KILOM.
             </p>
             <p className="font-body text-white/80 leading-relaxed">
-              En utilisant KILOM, vous acceptez sans réserve les présentes CGU. Si vous n'acceptez pas ces conditions, 
-              veuillez ne pas utiliser le service.
+              KILOM est un outil d'assistance administrative automatisant le calcul des indemnités kilométriques via l'analyse de votre calendrier professionnel. <strong>L'Application ne se substitue en aucun cas à un expert-comptable ou à un conseiller fiscal.</strong>
             </p>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">2. Description du service</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">2. Utilisation acceptable</h2>
             <p className="font-body text-white/80 leading-relaxed mb-4">
-              KILOM est un service de gestion automatisée des indemnités kilométriques qui permet :
+              En utilisant KILOM, vous vous engagez à :
             </p>
             <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>La synchronisation avec votre calendrier professionnel</li>
-              <li>L'identification automatique des déplacements professionnels par intelligence artificielle</li>
-              <li>Le calcul précis des distances via l'API Mapbox</li>
-              <li>La génération d'exports comptables conformes à la législation fiscale française</li>
+              <li>Fournir des informations exactes concernant votre véhicule (CV fiscaux, motorisation).</li>
+              <li>Ne pas utiliser l'application pour générer de fausses déclarations fiscales.</li>
+              <li>Vérifier systématiquement l'exactitude des trajets avant de les exporter.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">3. Inscription et compte utilisateur</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Pour utiliser KILOM, vous devez créer un compte en fournissant des informations exactes et à jour. 
-              Vous êtes responsable de la confidentialité de vos identifiants de connexion.
-            </p>
-            <p className="font-body text-white/80 leading-relaxed">
-              Vous vous engagez à nous notifier immédiatement toute utilisation non autorisée de votre compte.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">4. Plans et tarification</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              KILOM propose trois plans :
-            </p>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li><strong>Demo (Gratuit)</strong> : Accès limité à 10 trajets par mois</li>
-              <li><strong>Solo (89€/an)</strong> : Accès complet pour un utilisateur</li>
-              <li><strong>Duo (139€/an)</strong> : Accès complet pour deux utilisateurs</li>
-            </ul>
-            <p className="font-body text-white/80 leading-relaxed mt-4">
-              Les tarifs sont indiqués en euros TTC et sont susceptibles d'être modifiés. 
-              Toute modification sera notifiée aux utilisateurs avec un préavis de 30 jours.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">5. Paiement et renouvellement</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Les abonnements sont facturés annuellement. Le renouvellement est automatique sauf résiliation 
-              de votre part avant la date d'échéance.
-            </p>
-            <p className="font-body text-white/80 leading-relaxed">
-              Nous offrons une garantie « satisfait ou remboursé » de 30 jours pour tout nouvel abonnement.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">6. Utilisation acceptable</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              Vous vous engagez à utiliser KILOM conformément aux lois en vigueur et à ne pas :
-            </p>
-            <ul className="font-body text-white/80 leading-relaxed space-y-2 list-disc list-inside ml-4">
-              <li>Utiliser le service à des fins frauduleuses ou illégales</li>
-              <li>Tenter d'accéder aux systèmes ou données de manière non autorisée</li>
-              <li>Partager votre compte avec des tiers non autorisés</li>
-              <li>Utiliser le service pour générer de fausses déclarations fiscales</li>
+            <h2 className="font-heading text-2xl text-gold mb-4">3. Limitation de responsabilité (CLAUSE ESSENTIELLE)</h2>
+            <ul className="font-body text-white/80 leading-relaxed space-y-4 list-disc list-inside ml-4">
+              <li><strong>Technologies tierces :</strong> KILOM utilise l'Intelligence Artificielle (Google Gemini) pour analyser le contexte des événements, et des services de cartographie (Mapbox) pour le calcul des distances. Ces technologies peuvent comporter des marges d'erreur (ex: mauvaise interprétation d'une adresse).</li>
+              <li><strong>Obligation de vérification :</strong> Il incombe à l'utilisateur de vérifier l'exactitude des adresses, des distances calculées et des montants générés avant toute validation.</li>
+              <li><strong>Responsabilité fiscale :</strong> L'utilisateur est le seul et unique responsable des déclarations transmises à l'administration fiscale, à l'URSSAF ou à son employeur. L'éditeur de KILOM ne saurait être tenu responsable en cas de redressement fiscal, de rejet de notes de frais, de pénalités ou d'erreurs déclaratives.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">7. Propriété intellectuelle</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">4. Propriété intellectuelle</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              Tous les droits de propriété intellectuelle relatifs à KILOM (marque, logo, code source, design) 
-              sont la propriété exclusive de KILOM SAS. Toute reproduction ou utilisation non autorisée 
-              est strictement interdite.
+              L'ensemble des éléments de l'application KILOM (code source, algorithmes d'analyse, design, logo) est la propriété exclusive de son éditeur. L'abonnement vous confère un droit d'usage personnel et non cessible. Toute reproduction ou tentative de rétro-ingénierie (reverse-engineering) est strictement interdite.
             </p>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">8. Limitation de responsabilité</h2>
-            <p className="font-body text-white/80 leading-relaxed mb-4">
-              KILOM est fourni « en l'état ». Nous mettons tout en œuvre pour assurer la fiabilité du service, 
-              mais ne garantissons pas son fonctionnement sans interruption ni erreur.
-            </p>
+            <h2 className="font-heading text-2xl text-gold mb-4">5. Droit applicable et Litiges</h2>
             <p className="font-body text-white/80 leading-relaxed">
-              KILOM ne peut être tenu responsable des décisions fiscales ou comptables prises sur la base 
-              des données générées. Il est de votre responsabilité de vérifier l'exactitude des informations 
-              avant toute déclaration fiscale.
+              Les présentes CGU sont régies par le droit français. En cas de litige relatif à leur interprétation ou leur exécution, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.
             </p>
           </section>
 
           <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">9. Résiliation</h2>
-            <p className="font-body text-white/80 leading-relaxed">
-              Vous pouvez résilier votre abonnement à tout moment depuis votre espace personnel. 
-              La résiliation prendra effet à la fin de la période d'abonnement en cours.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">10. Modifications des CGU</h2>
-            <p className="font-body text-white/80 leading-relaxed">
-              KILOM se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs seront 
-              notifiés par email de toute modification substantielle 30 jours avant son entrée en vigueur.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">11. Droit applicable</h2>
-            <p className="font-body text-white/80 leading-relaxed">
-              Les présentes CGU sont régies par le droit français. Tout litige relatif à leur interprétation 
-              ou leur exécution relève de la compétence exclusive des tribunaux de Paris.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-heading text-2xl text-gold mb-4">12. Contact</h2>
+            <h2 className="font-heading text-2xl text-gold mb-4">6. Contact</h2>
             <p className="font-body text-white/80 leading-relaxed">
               Pour toute question relative aux présentes CGU, vous pouvez nous contacter à :{' '}
-              <a href="mailto:legal@kilom.fr" className="text-gold hover:underline">
-                legal@kilom.fr
+              <a href="mailto:contact@kilom.fr" className="text-gold hover:underline">
+                contact@kilom.fr
               </a>
             </p>
           </section>
